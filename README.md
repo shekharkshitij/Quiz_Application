@@ -12,18 +12,19 @@ Welcome to **Quiz Master - V2**, a comprehensive, multi-user, role-based quiz ma
    - [User Features](#user-features)  
    - [Additional Functionalities](#additional-functionalities)  
 3. [🛠️ Tech Stack](#️-tech-stack)  
-4. [📂 Project Structure](#-project-structure)  
-5. [⚙️ Installation Guide](#️-installation-guide)  
-6. [🔑 Authentication & Authorization](#-authentication--authorization)  
-7. [🌐 API Endpoints](#-api-endpoints)  
-8. [🗄️ Database Schema](#️-database-schema)  
-9. [⏱️ Scheduled Jobs (Batch Processing)](#️-scheduled-jobs-batch-processing)  
-10. [📊 Performance Optimization & Caching](#-performance-optimization--caching)  
-11. [📈 Deployment Guide](#-deployment-guide)  
-12. [🗃️ Data Flow Diagram](#-data-flow-diagram)  
-13. [💡 Potential Future Enhancements](#-potential-future-enhancements)  
-14. [📜 Contributing Guidelines](#-contributing-guidelines)  
-15. [📝 License](#-license)  
+4. [📂 Project Structure](#-project-structure)
+5. [📈 Frontend Components](#-frontend-components)
+6. [⚙️ Installation Guide](#️-installation-guide)  
+7. [🔑 Authentication & Authorization](#-authentication--authorization)  
+8. [🌐 API Endpoints](#-api-endpoints)  
+9. [🗄️ Database Schema](#️-database-schema)  
+10. [⏱️ Scheduled Jobs (Batch Processing)](#️-scheduled-jobs-batch-processing)  
+11. [📊 Performance Optimization & Caching](#-performance-optimization--caching)  
+12. [📈 Deployment Guide](#-deployment-guide)  
+13. [🗃️ Data Flow Diagram](#-data-flow-diagram)  
+14. [💡 Potential Future Enhancements](#-potential-future-enhancements)  
+15. [📜 Contributing Guidelines](#-contributing-guidelines)  
+16. [📝 License](#-license)  
 
 ---
 
@@ -148,36 +149,43 @@ backend/
 ### **Frontend Directory:**
 
 ```
-frontend/
-├── public/
-├── src/
-│   ├── api/
-│   │   └── api.js                # Axios API service
-│   ├── assets/
-│   │   └── logo.png              # Application logo
-│   ├── components/
-│   │   ├── AdminDashboardComponent.vue
-│   │   ├── LoginComponent.vue
-│   │   ├── RegisterComponent.vue
-│   │   ├── ManageSubjects.vue
-│   │   ├── ManageChapters.vue
-│   │   ├── ManageQuestions.vue
-│   │   ├── ManageQuizzes.vue
-│   │   ├── StartQuizComponent.vue
-│   │   └── UserDashboardComponent.vue
-│   ├── router/
-│   │   └── index.js              # Vue Router configuration
-│   ├── store/
-│   │   └── index.js              # Vuex store
-│   └── views/
-│       ├── AdminView.vue
-│       ├── HomeView.vue
-│       └── UserView.vue
-├── App.vue                       # Root Vue component
-├── main.js                       # Entry point for Vue app
-└── package.json                  # Frontend dependencies
+├── frontend/
+│   ├── node_modules/                    # Node.js dependencies for Vue.js
+│   ├── public/                          # Static public assets (index.html, favicon)
+│   └── src/                             # Source code for Vue.js application
+│       ├── api/
+│       │   └── api.js                   # Handles all API requests with Axios
+│       ├── assets/
+│       │   └── logo.png                 # Application logo and other static files
+│       ├── components/                  # Reusable Vue.js components
+│       │   ├── AdminDashboardComponent.vue    # Admin dashboard UI component
+│       │   ├── LoginComponent.vue             # User login form component
+│       │   ├── RegisterComponent.vue          # User registration form
+│       │   ├── ManageSubjects.vue              # Admin component for subject management
+│       │   ├── ManageChapters.vue              # Admin component for chapter management
+│       │   ├── ManageQuizzes.vue               # Admin component for quiz management
+│       │   ├── ManageQuestions.vue             # Admin component to manage questions
+│       │   ├── StartQuizComponent.vue          # User component to start quizzes
+│       │   ├── TakeQuizComponent.vue           # User component for quiz-taking interface
+│       │   ├── ScoreView.vue                   # Component to view quiz scores
+│       │   └── UserDashboardComponent.vue      # User dashboard UI component
+│       ├── router/
+│       │   └── index.js                        # Vue Router for client-side navigation
+│       ├── store/
+│       │   └── index.js                        # Vuex Store for state management
+│       ├── views/
+│       │   ├── AdminView.vue                   # View for Admin panel
+│       │   ├── HomeView.vue                    # Landing page view
+│       │   └── UserView.vue                    # View for user dashboard
+│       ├── App.vue                             # Main Vue.js application component
+│       ├── main.js                             # Entry point for Vue.js application
+│       ├── .gitignore                          # Git ignore rules
+│       ├── babel.config.js                     # Babel configuration for Vue
+│       ├── jsconfig.json                       # JS configuration (optional for IDE)
+│       ├── package.json                        # Project metadata and npm dependencies
+│       ├── package-lock.json                   # Lock file for npm to ensure consistent installs
+│       └── vue.config.js                       # Vue.js project configuration            
 ```
----
 
 ## 📦 **Frontend Components**
 
@@ -385,5 +393,3 @@ npm run serve                  # Run the Vue.js development server
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 ---
-
-This comprehensive `README.md` is ready to be used for your GitHub repository. 🚀
