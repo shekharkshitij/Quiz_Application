@@ -261,8 +261,7 @@ Each component communicates with the backend via **Axios** for CRUD operations a
 ### 📥 1. Clone the Repository:
 
 ```bash
-git clone https://github.com/your-username/quiz-master-v2.git
-cd quiz-master-v2
+git clone https://github.com/shekharkshitij/Quiz_Application.git
 ```
 
 ---
